@@ -1,0 +1,154 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+
+.button {
+    @apply inline-flex items-center px-4 py-2 bg-gray-100 disabled:bg-gray-100 disabled:text-gray-300 text-gray-800 border border-transparent rounded-md font-semibold text-sm tracking-normal transition ease-in-out duration-150 ring-gray-300;
+}
+
+.button.btn-sm {
+    @apply leading-none px-1 py-0;
+}
+
+
+.button:hover {
+    @apply bg-gray-200 disabled:bg-gray-100 disabled:text-gray-300;
+}
+
+.button:active, .button:focus {
+    @apply bg-gray-300 ring disabled:bg-gray-100 disabled:text-gray-300;
+}
+
+.button.button-primary {
+    @apply bg-indigo-500 text-white !important;
+}
+
+.button-primary:hover, .button.button-primary:active, .button.button-primary:focus {
+    @apply bg-indigo-600 !important;
+}
+
+.button.button-primary:disabled {
+    @apply bg-indigo-300 !important;
+}
+
+
+.button.button-success {
+    @apply bg-green-500 text-white !important;
+}
+
+.button-success:hover, .button.button-success:active, .button.button-success:focus {
+    @apply bg-green-600 !important;
+}
+
+.button.button-success:disabled {
+    @apply bg-green-400 !important;
+}
+
+
+.button.button-danger {
+    @apply bg-red-500 text-white !important;
+}
+
+.button-danger:hover, .button.button-danger:active, .button.button-danger:focus {
+    @apply bg-red-600 !important;
+}
+
+.button.button-danger:disabled {
+    @apply bg-red-200 !important;
+}
+
+
+.action-button {
+    @apply inline-flex items-center px-1 py-0 text-gray-800 border border-transparent rounded;
+    @apply bg-gray-100 !important;
+}
+
+.action-button:hover {
+    @apply bg-gray-200 !important;
+}
+
+/* Cabeçalho */
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+/* Carrossel com Vídeo */
+.carousel-container {
+    height: 300px; /* Altura do carrossel */
+    position: relative;
+    overflow: hidden;
+}
+
+.videoInsert {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    object-fit: cover; /* Cobre toda a área */
+    z-index: -1;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Escurece o vídeo */
+    z-index: 0;
+}
+
+/* Menu de Busca */
+.search-menu {
+    position: relative;
+    margin-top: -50px; /* Sobe para sobrepor o carrossel */
+    z-index: 2; /* Fica acima do carrossel */
+}
+
+.carousel-item {
+    height: 226px;
+    background-size: cover;
+    background-position: center;
+}
+.carousel-caption h2 {
+    font-size: 2.5rem;
+}
+.carousel-caption p {
+    font-size: 1.2rem;
+    color: black;
+}
+.carousel-caption ul {
+    list-style-type: none;
+    padding: 0;
+}
+.carousel-caption ul li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    color:black;
+}
+.carousel-caption ul li svg {
+    margin-right: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .search-menu form {
+        max-width: 100%; /* Ajusta a largura para 100% em telas menores */
+    }
+}
+
+#categories{
+    margin-top:150px;
+    padding: 100px;
+}
+
+@media (min-width: 960px) {
+    .container{
+        margin-top:150px;
+    }
+}
