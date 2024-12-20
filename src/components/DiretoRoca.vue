@@ -161,6 +161,12 @@ export default {
   padding-bottom: 24px;
 }
 
+.p-container {
+  display: flex;
+  align-items: center; /* Alinha os p's verticalmente no centro */
+  gap: 10px; /* Espaço entre os p's */
+}
+
 #p-sua-regiao {
   font-family: Arial;
   color: #772122;

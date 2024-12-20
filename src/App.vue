@@ -10,6 +10,7 @@
     <DiretoRoca />
     <TemporadaPessego />
     <MercadoFlores />
+    <Insumos />
 
 
     <!-- Footer -->
@@ -34,6 +35,7 @@ import MaisBuscados from "./components/MaisBuscados.vue";
 import DiretoRoca from "./components/DiretoRoca.vue";
 import TemporadaPessego from "./components/TemporadaPessego.vue";
 import MercadoFlores from "./components/MercadoFlores.vue";
+import Insumos from "./components/Insumos.vue";
 
 let currentController = new AbortController();
 export default {
@@ -49,6 +51,7 @@ export default {
     DiretoRoca,
     TemporadaPessego,
     MercadoFlores,
+    Insumos,
   },
   data() {
     return {
