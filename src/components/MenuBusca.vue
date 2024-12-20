@@ -1,6 +1,9 @@
 <script>
 export default {
-  name: "MenuBusca"
+  name: "MenuBusca",
+
+  components: {
+  },
 }
 </script>
 
@@ -27,5 +30,17 @@ export default {
 </template>
 
 <style scoped>
-
+/* Menu de Busca */
+.search-menu {
+  position: relative;
+  margin-top: -50px; /* Sobe para sobrepor o carrossel */
+  z-index: 2; /* Fica acima do carrossel */
+  margin-top: 6px;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+  .search-menu form {
+    max-width: 100%; /* Ajusta a largura para 100% em telas menores */
+  }
+}
 </style>

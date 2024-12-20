@@ -66,30 +66,11 @@
     @apply bg-gray-200 !important;
 }
 
-/* Cabeçalho */
-.navbar {
-    padding: 0.5rem 1rem;
-}
-
-.navbar-brand img {
-    max-height: 50px;
-}
-
 /* Carrossel com Vídeo */
 .carousel-container {
     height: 300px; /* Altura do carrossel */
     position: relative;
     overflow: hidden;
-}
-
-.videoInsert {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: auto;
-    object-fit: cover; /* Cobre toda a área */
-    z-index: -1;
 }
 
 .video-overlay {
@@ -100,51 +81,6 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3); /* Escurece o vídeo */
     z-index: 0;
-}
-
-/* Menu de Busca */
-.search-menu {
-    position: relative;
-    margin-top: -50px; /* Sobe para sobrepor o carrossel */
-    z-index: 2; /* Fica acima do carrossel */
-}
-
-.carousel-item {
-    height: 226px;
-    background-size: cover;
-    background-position: center;
-}
-.carousel-caption h2 {
-    font-size: 2.5rem;
-}
-.carousel-caption p {
-    font-size: 1.2rem;
-    color: black;
-}
-.carousel-caption ul {
-    list-style-type: none;
-    padding: 0;
-}
-.carousel-caption ul li {
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    color:black;
-}
-.carousel-caption ul li svg {
-    margin-right: 10px;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .search-menu form {
-        max-width: 100%; /* Ajusta a largura para 100% em telas menores */
-    }
-}
-
-#categories{
-    margin-top:150px;
-    padding: 100px;
 }
 
 @media (min-width: 960px) {

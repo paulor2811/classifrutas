@@ -1,6 +1,9 @@
 <script>
 export default {
-  name: "Cabecalho"
+  name: "Cabecalho",
+
+  components: {
+  },
 }
 </script>
 
@@ -35,5 +38,12 @@ export default {
 </template>
 
 <style scoped>
+/* Cabeçalho */
+.navbar {
+  padding: 0.5rem 1rem;
+}
 
+.navbar-brand img {
+  max-height: 50px;
+}
 </style>

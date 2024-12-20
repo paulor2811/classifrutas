@@ -1,6 +1,8 @@
 <script>
 export default {
-  name: "VideoSection"
+  name: "VideoSection",
+  components: {
+  },
 }
 </script>
 
@@ -58,5 +60,39 @@ export default {
 </template>
 
 <style scoped>
+.carousel-item {
+  height: 226px;
+  background-size: cover;
+  background-position: center;
+}
+.carousel-caption h2 {
+  font-size: 2.5rem;
+}
+.carousel-caption p {
+  font-size: 1.2rem;
+  color: black;
+}
+.carousel-caption ul {
+  list-style-type: none;
+  padding: 0;
+}
+.carousel-caption ul li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  color:black;
+}
+.carousel-caption ul li svg {
+  margin-right: 10px;
+}
 
+.videoInsert {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  object-fit: cover; /* Cobre toda a área */
+  z-index: -1;
+}
 </style>

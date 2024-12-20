@@ -1,6 +1,9 @@
 <script>
 export default {
-  name: "BarraSuperior"
+  name: "BarraSuperior",
+
+  components: {
+  },
 }
 </script>
 
