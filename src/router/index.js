@@ -1,21 +1,21 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import UserRegister from '../components/UserRegister/Register.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+
 const routes = [
     {
         path: '/',
         name: 'Home',
-        component: () => import('../App.vue')
+        component: () => import('../view/Home.vue'), // Página inicial
     },
     {
-        path: '/register',
-        name: 'UserRegister',
-        component: UserRegister,
+        path: '/registrar',
+        name: 'Registro',
+        component: () => import('../view/Registro.vue')
     }
-]
+];
 
 const router = createRouter({
-    history: createWebHistory(process.env.BASE_URL),
-    routes
-})
+    history: createWebHistory(import.meta.env.BASE_URL), // Use `import.meta.env.BASE_URL` no Vue 3
+    routes,
+});
 
-export default router
+export default router;

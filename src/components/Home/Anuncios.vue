@@ -14,7 +14,7 @@ export default {
       <p class="mt-3 text-dark">
         A mais nova opção de divulgação no mercado de hortifrutigranjeiro. Divulgamos nacionalmente seus produtos, facilitando a comercialização.
       </p>
-      <a href="#" class="btn btn-danger mt-3 px-5 py-2">Cadastre-se</a>
+      <a href="http://classifrutas.local:88/registrar" class="btn btn-danger mt-3 px-5 py-2">Cadastre-se</a>
     </div>
   </div>
 </template>
