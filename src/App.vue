@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <BarraSuperior />
-    <Cabecalho />
-    <VideoSection />
-    <MenuBusca />
-    <Categorias />
-    <Anuncios />
-    <MaisBuscados />
-    <DiretoRoca />
-    <TemporadaPessego />
-    <MercadoFlores />
-    <Insumos />
+    <CompBarraSuperior />
+    <CompCabecalho />
+    <CompVideoSection />
+    <CompMenuBusca />
+    <CompCategorias />
+    <CompAnuncio />
+    <CompMaisBuscados />
+    <CompDiretoRoca />
+    <CompTemporadaPessego />
+    <CompMercadoFlores />
+    <CompInsumos />
+    <CompParceiros />
 
+    <router-view></router-view>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4 mt-5">
@@ -23,35 +25,35 @@
 </template>
 
 <script>
-
-// Importando o componente
-import BarraSuperior from './components/BarraSuperior.vue';
-import Cabecalho from "./components/Cabecalho.vue";
-import VideoSection from "./components/VideoSection.vue";
-import MenuBusca from "./components/MenuBusca.vue";
-import Categorias from "./components/Categorias.vue";
-import Anuncios from "./components/Anuncios.vue";
-import MaisBuscados from "./components/MaisBuscados.vue";
-import DiretoRoca from "./components/DiretoRoca.vue";
-import TemporadaPessego from "./components/TemporadaPessego.vue";
-import MercadoFlores from "./components/MercadoFlores.vue";
-import Insumos from "./components/Insumos.vue";
+import CompBarraSuperior from './components/Home/BarraSuperior.vue';
+import CompCabecalho from "./components/Home/Cabecalho.vue";
+import CompVideoSection from "./components/Home/VideoSection.vue";
+import CompMenuBusca from "./components/Home/MenuBusca.vue";
+import CompCategorias from "./components/Home/Categorias.vue";
+import CompAnuncio from "./components/Home/Anuncios.vue";
+import CompMaisBuscados from "./components/Home/MaisBuscados.vue";
+import CompDiretoRoca from "./components/Home/DiretoRoca.vue";
+import CompTemporadaPessego from "./components/Home/TemporadaPessego.vue";
+import CompMercadoFlores from "./components/Home/MercadoFlores.vue";
+import CompInsumos from "./components/Home/Insumos.vue";
+import CompParceiros from "./components/Home/Parceiros.vue";
 
 let currentController = new AbortController();
 export default {
   name: "App",
   components: {
-    BarraSuperior, // Registrando o componente para ser usado
-    Cabecalho,
-    VideoSection,
-    MenuBusca,
-    Categorias,
-    Anuncios,
-    MaisBuscados,
-    DiretoRoca,
-    TemporadaPessego,
-    MercadoFlores,
-    Insumos,
+    CompBarraSuperior,
+    CompCabecalho,
+    CompVideoSection,
+    CompMenuBusca,
+    CompCategorias,
+    CompAnuncio,
+    CompMaisBuscados,
+    CompDiretoRoca,
+    CompTemporadaPessego,
+    CompMercadoFlores,
+    CompInsumos,
+    CompParceiros,
   },
   data() {
     return {
@@ -77,7 +79,7 @@ export default {
       this.message = "Aguardando carregamento...";
 
       try {
-        const response = await fetch(`${import.meta.env.VITE_API_URL}${endpoint}`, { signal });
+        const response = await fetch(`${import.meta.env.VITE_API_URL}${endpoint}`, {signal});
         const data = await response.json();
 
         // Simula tempo de carregamento
@@ -99,6 +101,4 @@ export default {
 };
 </script>
 
-<style scoped>
-
-</style>
+<style src="./style.css"></style>
